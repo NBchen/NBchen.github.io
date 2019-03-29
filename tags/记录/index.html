@@ -29,7 +29,7 @@
     
     
   <script src="/lib/pace/pace.min.js?v=1.0.2"></script>
-  <link rel="stylesheet" href="/lib/pace/pace-theme-center-circle.min.css?v=1.0.2">
+  <link rel="stylesheet" href="/lib/pace/pace-theme-minimal.min.css?v=1.0.2">
 
 
 
@@ -403,32 +403,6 @@
 
       <h2 class="post-title">
         
-          <a class="post-title-link" href="/2019/03/22/my2/" itemprop="url">
-            
-              <span itemprop="name">陈氏语录</span>
-            
-          </a>
-        
-      </h2>
-
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated" datetime="2019-03-22T10:40:23+08:00" content="2019-03-22">
-          03-22
-        </time>
-      </div>
-
-    </header>
-  </article>
-
-
-      
-        
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      <h2 class="post-title">
-        
           <a class="post-title-link" href="/2019/03/20/my/" itemprop="url">
             
               <span itemprop="name">这是我的第一篇博客</span>
@@ -505,6 +479,19 @@
               
 
               
+                
+                
+                <div class="site-state-item site-state-categories">
+                  <a href="/categories/index.html">
+                    
+                    
+                      
+                    
+                    <span class="site-state-item-count">1</span>
+                    <span class="site-state-item-name">分类</span>
+                  </a>
+                </div>
+              
 
               
                 
@@ -515,7 +502,9 @@
                     
                       
                     
-                    <span class="site-state-item-count">1</span>
+                      
+                    
+                    <span class="site-state-item-count">2</span>
                     <span class="site-state-item-name">标签</span>
                   </a>
                 </div>
@@ -588,6 +577,8 @@
       <i class="fa fa-area-chart"></i>
     </span>
     
+      <span class="post-meta-item-text">站点总字数：</span>
+    
     <span title="站点总字数">0k</span>
   
 
@@ -596,6 +587,8 @@
     <span class="post-meta-item-icon">
       <i class="fa fa-coffee"></i>
     </span>
+    
+      <span class="post-meta-item-text">站点阅读时长 &asymp;</span>
     
     <span title="站点阅读时长">1 分钟</span>
   
@@ -728,6 +721,35 @@
 
 
   
+  
+
+<script src="//cdn1.lncld.net/static/js/3.11.1/av-min.js"></script>
+
+
+
+<script src="//unpkg.com/valine/dist/Valine.min.js"></script>
+
+<script>
+  var GUEST = ['nick', 'mail', 'link'];
+  var guest = 'nick,mail,link';
+  guest = guest.split(',').filter(function(item) {
+    return GUEST.indexOf(item) > -1;
+  });
+  new Valine({
+    el: '#comments',
+    verify: false,
+    notify: false,
+    appId: 'AOdOwbO16Nvi4dgipsOqX6mW-gzGzoHsz',
+    appKey: '9Rj15Ihwmzk7dRfiOoBAowpg',
+    placeholder: 'Just go go',
+    avatar: 'mm',
+    meta: guest,
+    pageSize: '10' || 10,
+    visitor: false
+  });
+</script>
+
+
 
 
 
